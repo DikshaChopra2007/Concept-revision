@@ -1,0 +1,539 @@
+/*🟢 LEVEL 1 — Absolute Beginner
+Q1. Print 5 stars
+
+Expected:
+
+*****
+
+Hint: One loop.
+
+Q2. Print 5 stars vertically
+
+Expected:
+
+*
+*
+*
+*
+*
+
+Hint: One loop.
+
+Q3. Print numbers 1–5
+
+Expected:
+
+12345
+Q4. Print numbers vertically
+
+Expected:
+
+1
+2
+3
+4
+5
+Q5. Print the same number 5 times
+
+Expected:
+
+11111
+🟢 LEVEL 2 — Increasing Patterns
+Q6. Increasing star triangle
+
+For n = 5:
+
+*
+**
+***
+****
+*****
+Q7. Decreasing star triangle
+*****
+****
+***
+**
+*
+Q8. Increasing number triangle
+1
+12
+123
+1234
+12345
+Q9. Repeated number triangle
+1
+22
+333
+4444
+55555
+Q10. Alphabet triangle
+A
+AB
+ABC
+ABCD
+ABCDE
+
+Hint: You'll need another variable for the character.
+
+🟡 LEVEL 3 — if / else if + Loops
+
+Now start combining what you've learned.
+
+Q11. Print only even rows
+
+For n = 5:
+
+**
+****
+
+Only rows 2 and 4 should contain stars.
+
+Requirement: Use if.
+
+Q12. Print odd-number rows
+
+For n = 5:
+
+*
+***
+*****
+Q13. Alternating rows
+*
+**
+*
+**
+*
+
+Use:
+
+if
+else
+Q14. Odd/even number pattern
+1
+22
+333
+4444
+55555
+
+But use if/else to decide what gets printed.
+
+Q15. FizzBuzz-style pattern
+
+Print numbers from 1–20, but:
+
+Multiple of 3 → *
+Multiple of 5 → #
+Multiple of both → @
+Otherwise → number
+
+Example beginning:
+
+1
+2
+*
+4
+#
+*
+7
+8
+*
+#
+...
+🟡 LEVEL 4 — Nested for Loops
+
+Now things get interesting.
+
+Q16. Square
+
+For n = 5:
+
+*****
+*****
+*****
+*****
+*****
+
+Hint: Outer loop = rows, inner loop = columns.
+
+Q17. Number square
+12345
+12345
+12345
+12345
+12345
+Q18. Repeated row numbers
+11111
+22222
+33333
+44444
+55555
+Q19. Increasing triangle
+*
+**
+***
+****
+*****
+
+Use nested loops.
+
+Q20. Decreasing triangle
+*****
+****
+***
+**
+*
+🟠 LEVEL 5 — Slightly Harder
+Q21. Right-aligned triangle
+    *
+   **
+  ***
+ ****
+*****
+
+Hint: You'll need spaces.
+
+Think:
+
+spaces + stars
+Q22. Reverse right-aligned triangle
+*****
+ ****
+  ***
+   **
+    *
+Q23. Number triangle
+    1
+   12
+  123
+ 1234
+12345
+Q24. Reverse number triangle
+12345
+1234
+123
+12
+1
+Q25. Repeated number triangle
+    1
+   22
+  333
+ 4444
+55555
+🟠 LEVEL 6 — Intermediate
+Q26. Pyramid
+
+For n = 5:
+
+    *
+   ***
+  *****
+ *******
+*********
+
+Think carefully about:
+
+spaces
++
+stars
+Q27. Inverted pyramid
+*********
+ *******
+  *****
+   ***
+    *
+Q28. Hollow square
+*****
+*   *
+*   *
+*   *
+*****
+
+🔥 Important: This one requires if/else.
+
+You'll need to identify:
+
+Is this position on the boundary?
+
+Q29. Hollow triangle
+*
+**
+* *
+*  *
+*****
+Q30. Number pyramid
+    1
+   123
+  12345
+ 1234567
+123456789
+🔴 LEVEL 7 — Advanced Beginner
+Q31. Diamond
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+
+This combines two pyramids.
+
+Q32. Hollow pyramid
+    *
+   * *
+  *   *
+ *     *
+*********
+Q33. Hollow diamond
+    *
+   * *
+  *   *
+ *     *
+*       *
+ *     *
+  *   *
+   * *
+    *
+Q34. X pattern
+
+For n = 5:
+
+*   *
+ * *
+  *
+ * *
+*   *
+
+🔥 This is a great if practice question.
+
+Think about:
+
+row == column
+
+and
+
+row + column == n - 1
+Q35. Plus pattern
+  *
+  *
+*****
+  *
+  *
+
+Use if/else.
+
+🔴 LEVEL 8 — Challenge Patterns
+Q36. 0–1 triangle
+1
+01
+101
+0101
+10101
+
+You'll need to think about odd/even positions.
+
+Q37. Pascal-style pattern
+
+Start with:
+
+1
+11
+121
+1331
+14641
+
+Don't worry about making it mathematically efficient yet. Focus on understanding the pattern.
+
+Q38. Number pyramid
+    1
+   222
+  33333
+ 4444444
+555555555
+Q39. Palindrome number pyramid
+    1
+   121
+  12321
+ 1234321
+123454321
+
+🔥 Very good challenge.
+
+Q40. Butterfly pattern
+
+For n = 4:
+
+*      *
+**    **
+***  ***
+********
+***  ***
+**    **
+*      *
+
+This is a serious nested-loop practice question.*/
+
+/*Ques1*/
+for(let i = 1; i < 6; i++){
+    process.stdout.write("*");
+}
+/*Ques2*/
+for(let i=1;i<6;i++){
+    console.log("*")
+}
+
+/*Ques3*/
+
+for(let i = 1; i < 6; i++){
+    process.stdout.write(String(i));
+}
+
+/*Ques4*/
+for(let i=1;i<6;i++){
+    console.log(i)
+
+}
+/*ques5*/
+for(let n=1;n<6;n++){
+        process.stdout.write("1");}
+        /*ques6*/
+        for(let i=1;i<6;i++){
+    //For each value of i, we want to print i stars.
+    for(let j=1;j<=i;j++){
+    process.stdout.write("*");
+}
+    console.log("");
+}
+/*One thing to notice
+
+This:
+
+process.stdout.write("*");
+
+keeps printing on the same line.
+
+Then this:
+
+console.log();
+
+moves to the next line.
+
+So together:
+
+stdout.write → keep printing
+console.log() → go to next row*/
+/*ques7*/
+for(let i=5;i>0;i--){
+for(let j=1;j<=i;j++){
+    
+process.stdout.write("*");
+
+}
+console.log("");
+}
+    /*QUES8*/
+for(let i=1;i<6;i++){
+    for(let j=1;j<=i;j++){
+        process.stdout.write(String(j));
+    }
+    console.log(" ");
+}
+/*QUES9*/
+for(let i=1;i<6;i++){
+    for(let j=1;j<=i;j++){
+        process.stdout.write(String(i));
+    }
+    console.log(" ");
+}
+/*QUES10*/
+for(let i=1;i<6;i++){
+    for(let j=1;j<=i;j++){
+        process.stdout.write(String.fromCharCode(64 + i));
+    }
+    console.log(" ");
+}
+A
+BB
+CCC
+DDDD
+EEEEE
+/*QUES10*/
+for(let i=1;i<6;i++){
+    for(let j=1;j<=i;j++){
+        process.stdout.write(String.fromCharCode(64 + j));
+    }
+    console.log(" ");
+}
+A
+AB
+ABC
+ABCD
+ABCDE
+/*QUES11*/
+for(let i=1;i<6;i++){
+    if(i%2==0){
+        for(let j = 1; j <= i; j++){
+        process.stdout.write("*");
+        }
+    }
+    console.log(" ");
+}
+/*QUES12*/
+for(let i=1;i<6;i++){
+    if(i%2!==0){
+        for(let j = 1; j <= i; j++){
+        process.stdout.write("*");
+        }
+    }
+    console.log(" ");
+}
+/*Ques13
+Odd rows → 1 star
+Even rows → 2 stars*/
+
+for(let i;i<6;i++){
+if(i%2==0){
+    console.log("**");
+
+}
+else{
+    console.log("*");
+}
+}
+
+/*ques15*/
+for(let i =1;i<31;i++){
+if(i%15===0){
+console.log("$");
+}
+else if(i%5===0){
+console.log("#");
+}
+else if(i%3===0){
+console.log("*");   
+}
+else{
+    console.log(i);
+}
+
+}
+/*ques 16*/
+for(let i = 1; i <= 5; i++){
+
+    for(let j = 1; j <= 5; j++){
+        process.stdout.write("*");
+    }
+
+    console.log();
+}
+/*ques 19 */
+for(let i = 1; i <= 5; i++){
+
+    for(let j = 1; j <= i; j++){
+        process.stdout.write("*");
+    }
+
+    console.log();
+}

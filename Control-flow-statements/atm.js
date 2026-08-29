@@ -33,3 +33,4 @@ case 3:
 default:
     prompt("Invalid choice");
     break;
+}
