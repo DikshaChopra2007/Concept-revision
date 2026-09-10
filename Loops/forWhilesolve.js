@@ -1,4 +1,4 @@
-let permissions = {
+/*let permissions = {
     read: true,
     write: true,
     delete: false,
@@ -8,4 +8,4 @@ for (let perm in permissions){
     if(permissions[perm] === true){
         console.log(perm);
     }
-}
+}*/
