@@ -39,7 +39,7 @@ enum StatusCodes{
 StatusCodes.NOTFOUND*/
 //Any unknown void n ull
 //variable ka time shd never be any 
-let a:unknown;//type of a is unknown
+/*let a:unknown;//type of a is unknown
 if (typeof a ==="string"){
     a.toUpperCase
 }
@@ -48,4 +48,14 @@ if (typeof a ==="string"){
 /*function abcd():boolean{
     return true; 
 }*/
-//never--> jahan kuch return nhi krna 
+//never--> jahan kuch return nhi krna*/
+interface User{
+    name:string,
+    email:string,
+    password:string
+}
+function getDataOfUser(obj:User){
+
+}
+getDataOfUser({name:"Harsh",email:"dikshachopra2007@gmail.com",password:"123"})
+//interface--> shakal of object 
