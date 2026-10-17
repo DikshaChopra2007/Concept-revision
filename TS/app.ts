@@ -25,7 +25,7 @@ let arr = [1,2,3];
 //tuples 
 let arr: [string,number] =["harsh",22];*/
 //enums--> enumerations
-enum UserRoles{
+/*enum UserRoles{
     ADMIN = "admin",
     GUEST ="guest",
     "SUPER_ADMIN"="super_admin"
@@ -36,5 +36,16 @@ enum StatusCodes{
     NOTFOUND ="not found status code 404"
 
 }
-StatusCodes.NOTFOUND
- 
+StatusCodes.NOTFOUND*/
+//Any unknown void n ull
+//variable ka time shd never be any 
+let a:unknown;//type of a is unknown
+if (typeof a ==="string"){
+    a.toUpperCase
+}
+//function abcd(): return type{
+//}
+/*function abcd():boolean{
+    return true; 
+}*/
+//never--> jahan kuch return nhi krna 
