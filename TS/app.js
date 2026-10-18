@@ -11,6 +11,7 @@
 //aur bracket nhi lage toh primitive
 //primituve can be copied directly 
 //refrence ko directly copy nhi kr sakte 
+export {};
 /*var = 12;
 var b= a;
 //
@@ -24,17 +25,82 @@ let arr = [1,2,3];
 //tuples
 let arr: [string,number] =["harsh",22];*/
 //enums--> enumerations
-var UserRoles;
-(function (UserRoles) {
-    UserRoles["ADMIN"] = "admin";
-    UserRoles["GUEST"] = "guest";
-    UserRoles["SUPER_ADMIN"] = "super_admin";
-})(UserRoles || (UserRoles = {}));
-var StatusCodes;
-(function (StatusCodes) {
-    StatusCodes["ABANDONED"] = "abandoned status code 500";
-    StatusCodes["NOTFOUND"] = "not found status code 404";
-})(StatusCodes || (StatusCodes = {}));
-StatusCodes.NOTFOUND;
-export {};
+/*enum UserRoles{
+    ADMIN = "admin",
+    GUEST ="guest",
+    "SUPER_ADMIN"="super_admin"
+}
+
+enum StatusCodes{
+    ABANDONED = "abandoned status code 500",
+    NOTFOUND ="not found status code 404"
+
+}
+StatusCodes.NOTFOUND*/
+//Any unknown void n ull
+//variable ka time shd never be any 
+/*let a:unknown;//type of a is unknown
+if (typeof a ==="string"){
+    a.toUpperCase
+}
+//function abcd(): return type{
+//}
+/*function abcd():boolean{
+    return true;
+}*/
+//never--> jahan kuch return nhi krna*/
+/*interface User{
+    name:string,
+    email:string,
+    password:string
+}
+function getDataOfUser(obj:User){
+
+}
+getDataOfUser({name:"Harsh",email:"dikshachopra2007@gmail.com",password:"123"})
+//interface--> shakal of object
+interface Abcd{
+    name: string ;
+    email: string ;
+    password: string ;
+    gender?: string ;
+}
+function abcd(obj:Abcd){
+    obj.gender
+}*/
+//Extending interfaces 
+//type aliases
+//intersection types 
+/*interface User{
+    name:string;
+    email:string ;
+    password:string;
+}
+interface Admin extends User {
+    //admin extend kr rha hai user ko -
+    //matlab ki user ke pass jo hai woh roh admin ke pass hoga
+    //admin ke pass khud ki ek extra property hogi admin
+    admin:boolean ;
+
+}
+// 2 interfaces of same name are merged
+//intersection types
+type sankhya = number ;
+let a: sankhya ;
+//example 2
+//instead of writing
+// let a : string|number|null;
+//we can write
+type value = string|number|null;//union
+let a: value;*/
+//intersection types
+/*type User ={
+    name:string,
+    email:string,
+
+
+type Admin =User &{
+    getDetails(user:string):void
+}*/
+//CLASSES AND OBJECTS 
 //# sourceMappingURL=app.js.map
