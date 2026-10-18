@@ -49,7 +49,7 @@ if (typeof a ==="string"){
     return true; 
 }*/
 //never--> jahan kuch return nhi krna*/
-interface User{
+/*interface User{
     name:string,
     email:string,
     password:string
@@ -58,4 +58,48 @@ function getDataOfUser(obj:User){
 
 }
 getDataOfUser({name:"Harsh",email:"dikshachopra2007@gmail.com",password:"123"})
-//interface--> shakal of object 
+//interface--> shakal of object  
+interface Abcd{
+    name: string ;
+    email: string ;
+    password: string ;
+    gender?: string ;
+}
+function abcd(obj:Abcd){
+    obj.gender
+}*/
+//Extending interfaces 
+//type aliases
+//intersection types 
+/*interface User{
+    name:string;
+    email:string ;
+    password:string;
+}
+interface Admin extends User {
+    //admin extend kr rha hai user ko -
+    //matlab ki user ke pass jo hai woh roh admin ke pass hoga
+    //admin ke pass khud ki ek extra property hogi admin
+    admin:boolean ;
+
+}
+// 2 interfaces of same name are merged 
+//intersection types 
+type sankhya = number ;
+let a: sankhya ;
+//example 2
+//instead of writing 
+// let a : string|number|null;
+//we can write 
+type value = string|number|null;//union
+let a: value;*/
+//intersection types
+/*type User ={
+    name:string,
+    email:string,
+
+
+type Admin =User &{
+    getDetails(user:string):void
+}*/
+//CLASSES AND OBJECTS 
