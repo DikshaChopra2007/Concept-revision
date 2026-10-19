@@ -78,4 +78,50 @@ new HumanMaker('Ashir',true)*/
     changeSomeMoreStuff(){
         console.log("hey");
     }
- }*/
+ }
+class BottleMaker {
+    constructor(public name: string) {}
+}
+
+class MetalBottleMaker extends BottleMaker {
+        constructor(name:string){
+            super(name);
+        }
+        getValue(){
+            console.log(this.name);
+        }
+}
+
+let b1 = new BottleMaker("Milton");*/
+ /*class User{
+    constructor( public  name:string){}
+changeName(){
+    this.name="hellyow"
+}
+    
+ }
+let u1 = new User("Harsh");*/
+//public gender?: --> gender becomes optional to fill
+/*class User {
+    public name;
+    public age;
+
+    constructor(name: string, age: number) {
+        this.name = name;
+        this.age = age;
+    }
+}*/
+//getter and setters
+//getter --> clas ke andar ek aisa method jo tumhe value nikalke de
+//setter--> aisa method jo tumse value le aur class ke andar ki value change krde 
+/*class User{
+    constructor(public name:string, public age:number) { }
+    getName(){
+        return this.name;
+    }
+    setName(value:string){
+        this.name= value;
+    }
+}
+let u1 = new User("harsh",25);*/
+//functions 
