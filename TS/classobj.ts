@@ -125,3 +125,19 @@ let u1 = new User("Harsh");*/
 }
 let u1 = new User("harsh",25);*/
 //functions 
+/*function abcd(): string{
+return "hey";
+}*/
+//Generics
+//generic function
+//generic interface
+//generic classes
+//humein ek function bnana hai jo ki acept krega koi bhi vaue and usey print krega
+//hum ek function ko use krte waqt bta skte hai ki function argument ko kis type se treat kare
+/*function abcd<T>(a:T){}
+//T --> template classes
+abcd<string>("harsh");
+abcd<number>(12);*/
+//humara T abb string ban chuka hai
+function abcd <H>(a:H,b:string,c:number) { }
+abcd<string>
